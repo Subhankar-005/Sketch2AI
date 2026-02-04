@@ -1,0 +1,60 @@
+/* CANVAS */
+.drawing-canvas {
+  background: black;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  cursor: crosshair;
+}
+
+/* CANVAS ACTIONS */
+.canvas-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.canvas-actions button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #1e293b;
+  color: white;
+}
+
+.canvas-actions .generate {
+  background: #22c55e;
+  color: black;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.select-btn {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
