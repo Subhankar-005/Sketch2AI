@@ -250,7 +250,8 @@ body {
   margin-top: 30px;
 }
 
-.canvas {
+.canvas 
+{
   border: 3px solid orange;
   border-radius: 10px;
   background: white;
