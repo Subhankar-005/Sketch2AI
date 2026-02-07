@@ -1,16 +1,16 @@
 import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
-  return (
-    <nav className="navbar">
-      <NavLink to="/" className="nav-logo">Sketch2AI</NavLink>
+const Navbar = () => (
+  <nav className="navbar">
+    <h2 className="logo">Sketch2AI</h2>
+    <div className="nav-links">
+      <NavLink to="/" end>Home</NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/draw">Draw</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
+      <NavLink to="/login">Login</NavLink>
+    </div>
+  </nav>
+);
 
-      <div className="nav-links">
-        <NavLink to="/" className="nav-item">Home</NavLink>
-        <NavLink to="/about" className="nav-item">About</NavLink>
-        <NavLink to="/contact" className="nav-item">Contact</NavLink>
-        <NavLink to="/login" className="nav-item">Login</NavLink>
-      </div>
-    </nav>
-  );
-}
+export default Navbar;
